@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="css/search.css">
+
+<body>
+
+    <input placeholder="Search here ....."  type="search" class="search " ng-model="d.name"/> 
+
+    <h1>Planets List</h1>
+<div ng-repeat="d in planetList | filter: d.name">
+   
+<div class="row" >
+   
+    <table class="table table-bordered " >
+    <thead>
+      <tr>
+        <th><b>Name:</b></th>
+        <th>{{d.name}}</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>      
+            <td><b>Rotation Period:</b></td><td>{{d.rotation_period}}</td>
+        </tr>
+        <tr>
+            <td><b>Orbital Period:</b></td><td>{{d.orbital_period}}</td>
+        </tr>
+        <tr>
+            <td><b>Diameter:</b></td><td>{{d.diameter}}</td>
+        </tr>
+        <tr>
+        <td><b>Climate:</b></td><td>{{d.climate}}</td>
+        </tr>
+        <tr>
+        <td><b>Gravity:</b></td><td>{{d.gravity}}</td>
+        </tr>
+        <tr>
+        <td><b>Terrain:</b></td><td>{{d.terrain}}</td>
+        </tr>
+        <tr>
+        <td><b>Surface Water:</b></td><td>{{d.surface_water}}</td>
+        </tr>
+        <tr>
+        <td><b>Population:</b></td><td>{{d.population}}</td>
+        </tr>
+        <tr>
+          <td><b>Residents:</b></td><td>{{d.residents}}</td>
+        </tr>
+        <tr>
+          <td><b>Films:</b></td><td>{{d.films}}</td>
+        </tr>
+        <tr>
+          <td><b>Edited:</b></td><td>{{d.edited}}</td>
+        </tr>
+        <tr>
+          <td><b>Url:</b></td><td>{{d.url}}</td>
+        </tr>
+    </tbody>
+  </table>
+   
+</div>
+
+    </div>
+</body>

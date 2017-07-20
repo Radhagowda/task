@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="css/style.css">
+<hgroup>
+    <h1 style="color: #F4F6F7">Login</h1>
+</hgroup>
+<form>
+   
+    <center>
+    <img src="/js/resource/loginprofile.png" class="img-responsive" alt="Cinque Terre">
+	</center>
+    <div  class="input-group"> 
+          <input id="email" type="email" class="form-control" name="email" value="" placeholder="Enter Email"  ng-model="data.name" >
+		  
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+			
+	  </div>
+    
+    <div  class="input-group">
+      <input id="Password" type="text" class="form-control" name="password" value="" placeholder="Enter Password" ng-model="data.password">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-eye-open"></i></span>
+		
+	        </div>
+    <center>
+    <button type="button" ng-click="submit()" class="btn btn-success">Submit
+        <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+    </button>
+        </center>
+        
+</form>
